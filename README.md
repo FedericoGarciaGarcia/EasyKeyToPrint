@@ -1,18 +1,19 @@
 <img align="left" width="80" height="80" src="https://raw.githubusercontent.com/FedericoGarciaGarcia/EasyKeyToPrint/development/source/images/icon.png" alt="Resume application project app icon">
 
-# EasyKeyToPrint
+# Easy Key To Print
 
 An application to print screenshots made in Java.
 
 ## How to use
 
-* Run the application. The application will appear in the tray.
+* Run the application. It will appear in the tray.
 * Right click the tray icon and select your printer and other settings.
 * Press the PRINT SCREEN key.
 * The screen will be printed.
 
 ## Features
 
+* *Color*: grayscale or full color.
 
 ### Windows
 

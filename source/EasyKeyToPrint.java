@@ -189,14 +189,10 @@ public class EasyKeyToPrint implements NativeKeyListener  {
 		
 		// Null Image for now
 		Image image = null;
-		Image imageblackandwhite = null;
-		ImageIcon blackandwhite = null;
 		
 		// Try to load the image
 		try {
 			image = ImageIO.read(getClass().getResource("/images/icon.png"));
-			imageblackandwhite = ImageIO.read(getClass().getResource("/images/blackandwhite.png"));
-			blackandwhite = new ImageIcon(imageblackandwhite);
 		}
 		catch (IOException e) {
 			e.printStackTrace();
