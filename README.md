@@ -1,5 +1,7 @@
 # EasyKeyToPrint
 
+![Logo](https://raw.githubusercontent.com/FedericoGarciaGarcia/EasyKeyToPrint/development/source/images/icon.png)
+
 ## How to use
 
 Compile with:
