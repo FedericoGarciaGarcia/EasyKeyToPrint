@@ -1,0 +1,17 @@
+[Color]
+0
+
+[Date]
+0
+
+[Orientation]
+0
+
+[Fit]
+0
+
+[Printer]
+CutePDF
+
+[Language]
+English
