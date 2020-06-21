@@ -29,13 +29,15 @@ More features on the way:
 * Press the PRINT SCREEN key.
 * The screen will be printed.
 
+Make sure you have [Java](https://java.com/en/download/) installed in your system.
+
 ### Windows
 
-Download the *.exe* file in the *release* folder, place in your desired location and run.
+Download the *EasyKeyToPrint* folder in *releases/windows*, place in your desired location and run *EasyKeyToPrint.exe*.
 
 ### Linux and MAC
 
-Download the *.jar* file in the *release* folder, place in your desired location and run.
+Download the *EasyKeyToPrint* folder in *releases/java*, place in your desired location and run *EasyKeyToPrint.jar*.
 
 ### Source code
 
