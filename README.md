@@ -51,14 +51,12 @@ Compile with:
 
 ```
 javac -cp ".;libs/jnativehook-2.1.0.jar" *.java
-
 ```
 
 Run with:
 
 ```
 java -cp ".;libs/jnativehook-2.1.0.jar" EasyKeyToPrint
-
 ```
 
 
@@ -68,5 +66,5 @@ Federico Garcia Garcia
 
 ## Acknowledgments
 
-PageFormatFactory class made by:
+*PageFormatFactory* class made by:
 * *Object Refinery Ltd, Pentaho Corporation and Contributors*
