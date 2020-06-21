@@ -2,7 +2,7 @@
 
 <img style="float: right;" src="https://raw.githubusercontent.com/FedericoGarciaGarcia/EasyKeyToPrint/development/source/images/icon.png">
 
-Explanation.
+<p>Explanation.</p>
 
 ## How to use
 
