@@ -69,4 +69,4 @@ Federico Garcia Garcia
 ## Acknowledgments
 
 PageFormatFactory class made by:
-* Object Refinery Ltd, Pentaho Corporation and Contributors
+* *Object Refinery Ltd, Pentaho Corporation and Contributors*
