@@ -1,6 +1,8 @@
 # EasyKeyToPrint
 
-![Logo](https://raw.githubusercontent.com/FedericoGarciaGarcia/EasyKeyToPrint/development/source/images/icon.png)
+<img style="float: right;" src="https://raw.githubusercontent.com/FedericoGarciaGarcia/EasyKeyToPrint/development/source/images/icon.png">
+
+Explanation.
 
 ## How to use
 
