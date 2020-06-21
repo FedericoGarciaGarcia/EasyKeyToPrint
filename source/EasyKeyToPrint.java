@@ -61,6 +61,9 @@ public class EasyKeyToPrint implements NativeKeyListener  {
     }
     private Config config;
 	
+	// Trayicon
+	private TrayIcon trayIcon;
+	
 	// Menus
 	private Menu colorMenu;
 	private 	CheckboxMenuItem checkboxMenuItemBlackAndWhite;
@@ -206,7 +209,7 @@ public class EasyKeyToPrint implements NativeKeyListener  {
 		image = image.getScaledInstance(trayIconSize.width, trayIconSize.height, Image.SCALE_SMOOTH);
 		
 		// Create tray icon system
-		final TrayIcon trayIcon = new TrayIcon(image, "EasyKeyToPrint");
+		trayIcon = new TrayIcon(image, "EasyKeyToPrint");
 		
 		// Create a pop-up menu components
 		colorMenu     = new Menu("Color");
@@ -547,6 +550,7 @@ public class EasyKeyToPrint implements NativeKeyListener  {
         //attrib.add(Chromaticity.MONOCHROME);
         
         // Create printer and start thread
+		trayIcon.displayMessage("EasyKeyToPrint", "Printing document...", TrayIcon.MessageType.INFO);
         Printer printer = new Printer(image, printersMap.get(config.printer), config.fit, config.orientation);
         printer.run();
     }
