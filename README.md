@@ -1,8 +1,8 @@
 # EasyKeyToPrint
-
+<p>
 <img style="float: right;" src="https://raw.githubusercontent.com/FedericoGarciaGarcia/EasyKeyToPrint/development/source/images/icon.png">
 
-<p>Explanation.</p>
+Explanation.</p>
 
 ## How to use
 
