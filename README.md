@@ -60,3 +60,13 @@ Run with:
 java -cp ".;libs/jnativehook-2.1.0.jar" EasyKeyToPrint
 
 ```
+
+
+# Author
+
+Federico Garcia Garcia
+
+## Acknowledgments
+
+PageFormatFactory class made by:
+* Object Refinery Ltd, Pentaho Corporation and Contributors
