@@ -14,6 +14,12 @@ An application to print screenshots made in Java.
 ## Features
 
 * *Color*: grayscale or full color.
+* *Paper orientation*: landscape or portrait.
+* *Fit*: maintain aspect ratio or stretch to fit.
+* *Taskbar*: show or hide the operating system's traskbar in the screenshot.
+* *Printers*: select the printer to use. PDF printers are also valid.
+* *Language*: English, Spanish or Japanese. More languages can be added by the user.
+* *Save settings:* settings are saved every time.
 
 ### Windows
 
