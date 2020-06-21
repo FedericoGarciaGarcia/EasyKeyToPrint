@@ -6,7 +6,7 @@ An application to print screenshots made in Java.
 
 ## Features
 
-* __*Color*__: grayscale or full color.
+* *Color*: grayscale or full color.
 * *Paper orientation*: landscape or portrait.
 * *Fit*: maintain aspect ratio or stretch to fit.
 * *Taskbar*: show or hide the operating system's traskbar in the screenshot.
