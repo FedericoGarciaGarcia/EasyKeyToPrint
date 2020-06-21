@@ -41,11 +41,11 @@ Download the *EasyKeyToPrint* folder in *releases/java*, place in your desired l
 * Press the PRINT SCREEN key.
 * The screen will be printed.
 
-### Source code
+## Source code
 
 You can also download the source code and compile it yourself.
 
-Place yourself in the *source* directory:
+Download the *source* folder and cd to it:
 
 ```
 cd source
