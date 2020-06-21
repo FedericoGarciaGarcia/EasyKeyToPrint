@@ -28,11 +28,11 @@ Make sure you have [Java](https://java.com/en/download/) installed in your syste
 
 ### Windows
 
-Download the *EasyKeyToPrint* folder in *releases/windows*, place in your desired location and run *EasyKeyToPrint.exe*.
+Download the *EasyKeyToPrint* folder in *releases/windows* and put in desired location. You can start the application by running *EasyKeyToPrinte.exe*.
 
 ### Linux and MAC
 
-Download the *EasyKeyToPrint* folder in *releases/java*, place in your desired location and run *EasyKeyToPrint.jar*.
+Download the *EasyKeyToPrint* folder in *releases/java* and put in desired location. You can start the application by running *EasyKeyToPrinte.jar*.
 
 ## How to use
 
