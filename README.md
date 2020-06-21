@@ -22,12 +22,7 @@ More features on the way:
 * *Paper size*: available sizes are A4, A3 and B5. Custom sizes are also accepted.
 * *Notification*: show a notification when a screenshot is taken.
 
-## How to use
-
-* Run the application. It will appear in the tray.
-* Right click the tray icon and select your printer and other settings.
-* Press the PRINT SCREEN key.
-* The screen will be printed.
+## Installation
 
 Make sure you have [Java](https://java.com/en/download/) installed in your system.
 
@@ -38,6 +33,13 @@ Download the *EasyKeyToPrint* folder in *releases/windows*, place in your desire
 ### Linux and MAC
 
 Download the *EasyKeyToPrint* folder in *releases/java*, place in your desired location and run *EasyKeyToPrint.jar*.
+
+## How to use
+
+* Run the application. It will appear in the tray.
+* Right click the tray icon and select your printer and other settings.
+* Press the PRINT SCREEN key.
+* The screen will be printed.
 
 ### Source code
 
