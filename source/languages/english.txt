@@ -1,0 +1,13 @@
+[Language]
+English
+
+[Color]
+Color
+
+[About]
+About
+
+[Black and white]
+Black and white
+
+TODO

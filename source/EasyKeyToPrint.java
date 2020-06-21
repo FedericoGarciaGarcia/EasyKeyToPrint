@@ -15,6 +15,7 @@ import java.util.ArrayList;
 
 import java.awt.*;
 import javax.imageio.ImageIO;
+import javax.swing.ImageIcon;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
@@ -46,6 +47,12 @@ public class EasyKeyToPrint implements NativeKeyListener  {
     
     // Robot
     private Robot robot;
+    
+    // Properties
+    public static int COLOR_BLACK_AND_WHITE = 0;
+    public static int COLOR_COLOR           = 1;
+    public static int FIT_MAINTAIN_ASPECT_RATIO = 0;
+    public static int FIT_SCALE                 = 1;
     
     // Start everything
     public EasyKeyToPrint() {
@@ -116,14 +123,17 @@ public class EasyKeyToPrint implements NativeKeyListener  {
             
             // Null Image for now
             Image image = null;
+            Image imageblackandwhite = null;
+            ImageIcon blackandwhite = null;
             
             // Try to load the image
             try {
                 image = ImageIO.read(getClass().getResource("/images/icon.png"));
+                imageblackandwhite = ImageIO.read(getClass().getResource("/images/blackandwhite.png"));
+                blackandwhite = new ImageIcon(imageblackandwhite);
             }
             catch (IOException e) {
                 e.printStackTrace();
- 
             }
             // Get the OS tray image size
             final SystemTray tray = SystemTray.getSystemTray();
@@ -137,10 +147,24 @@ public class EasyKeyToPrint implements NativeKeyListener  {
             
             // Create a pop-up menu components
             Menu colorMenu     = new Menu("Color");
-                CheckboxMenuItem checkboxMenuItemColor         = new CheckboxMenuItem("Color");
                 CheckboxMenuItem checkboxMenuItemBlackAndWhite = new CheckboxMenuItem("Black and white");
+                CheckboxMenuItem checkboxMenuItemColor         = new CheckboxMenuItem("Color");
+            MenuItem titleItem = new MenuItem("Title");
+            MenuItem dateItem  = new MenuItem("Date");
+            Menu orientationMenu  = new Menu("Orientation");
+                CheckboxMenuItem checkboxMenuItemLandscape  = new CheckboxMenuItem("Landscape");
+                CheckboxMenuItem checkboxMenuItemPortrait   = new CheckboxMenuItem("Portrait");
+            Menu fitMenu  = new Menu("Fit");
+                CheckboxMenuItem checkboxMenuItemAspectRatio = new CheckboxMenuItem("Maintain aspect ratio");
+                CheckboxMenuItem checkboxMenuItemStretch     = new CheckboxMenuItem("Stretch");
             Menu printerMenu   = new Menu("Printers");
+            
+            Menu languageMenu  = new Menu("Language");
+                CheckboxMenuItem checkboxMenuItemEnglish  = new CheckboxMenuItem("English");
+                CheckboxMenuItem checkboxMenuItemJapanese = new CheckboxMenuItem("Japanese");
+            MenuItem helpItem  = new MenuItem("Help");
             MenuItem aboutItem = new MenuItem("About");
+            
             MenuItem exitItem  = new MenuItem("Exit");
             
             // Create each printer menu item
@@ -175,26 +199,52 @@ public class EasyKeyToPrint implements NativeKeyListener  {
             }
             
             // Add color
-            colorMenu.add(checkboxMenuItemColor);
             colorMenu.add(checkboxMenuItemBlackAndWhite);
+            colorMenu.add(checkboxMenuItemColor);
             
             // Select first printer
             printerCheckboxMenuItem[0].setState(true);
             currentPrinter = printServices[0].getName();
-          
-            // Select black and white
-            checkboxMenuItemBlackAndWhite.setState(true);
+            
+            // Add orientations
+            orientationMenu.add(checkboxMenuItemLandscape);
+            orientationMenu.add(checkboxMenuItemPortrait);
+            
+            // Add fits
+            fitMenu.add(checkboxMenuItemAspectRatio);
+            fitMenu.add(checkboxMenuItemStretch);
+            
+            // Add languages
+            languageMenu.add(checkboxMenuItemEnglish);
+            languageMenu.add(checkboxMenuItemJapanese);
+            
+            // Set icons
+            //checkboxMenuItemBlackAndWhite.setIcon(blackandwhite);
             
             //Add components to pop-up menu
             popup.add(colorMenu);
+            popup.add(titleItem);
+            popup.add(dateItem);
+            popup.add(orientationMenu);
+            popup.add(fitMenu);
             popup.add(printerMenu);
             popup.addSeparator();
+            popup.add(languageMenu);
+            popup.add(helpItem);
             popup.add(aboutItem);
             popup.addSeparator();
             popup.add(exitItem);
             
             trayIcon.setPopupMenu(popup);
-           
+            
+            // Set default settings
+            checkboxMenuItemBlackAndWhite.setState(true); // Color -> black and white
+            checkboxMenuItemLandscape.setState(true);     // Orientation -> landscape
+            checkboxMenuItemAspectRatio.setState(true);   // Fit -> aspect ratio
+            checkboxMenuItemEnglish.setState(true);       // Language -> English
+            printerCheckboxMenuItem[0].setState(true);    // Printer -> First printer
+            currentPrinter = printServices[0].getName();
+            
             // Try and add the tray system
             try {
                 tray.add(trayIcon);

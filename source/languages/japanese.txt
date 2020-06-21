@@ -1,0 +1,13 @@
+[Language]
+日本語
+
+[Color]
+カラ－
+
+[About]
+ついて
+
+[Black and white]
+黒と白
+
+TODO
