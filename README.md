@@ -4,13 +4,6 @@
 
 An application to print screenshots made in Java.
 
-## How to use
-
-* Run the application. It will appear in the tray.
-* Right click the tray icon and select your printer and other settings.
-* Press the PRINT SCREEN key.
-* The screen will be printed.
-
 ## Features
 
 * *Color*: grayscale or full color.
@@ -20,6 +13,21 @@ An application to print screenshots made in Java.
 * *Printers*: select the printer to use. PDF printers are also valid.
 * *Language*: English, Spanish or Japanese. More languages can be added by the user.
 * *Save settings:* settings are saved every time.
+
+More features on the way:
+
+* *Do no print screenshot*: Hold the SHIFT key and press the PRINT SCREEN key to take a screenshot without printing.
+* *Title*: place a title on the document.
+* *Date*: place the current date on the document.
+* *Paper size*: available sizes are A4, A3 and B5. Custom sizes are also accepted.
+* *Notification*: show a notification when a screenshot is taken.
+
+## How to use
+
+* Run the application. It will appear in the tray.
+* Right click the tray icon and select your printer and other settings.
+* Press the PRINT SCREEN key.
+* The screen will be printed.
 
 ### Windows
 
