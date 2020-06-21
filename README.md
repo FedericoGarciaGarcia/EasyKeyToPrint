@@ -62,11 +62,11 @@ java -cp ".;libs/jnativehook-2.1.0.jar" EasyKeyToPrint
 ```
 
 
-# Author
+## Author
 
 Federico Garcia Garcia
 
-# Acknowledgments
+## Acknowledgments
 
 PageFormatFactory class made by:
 * Object Refinery Ltd, Pentaho Corporation and Contributors
