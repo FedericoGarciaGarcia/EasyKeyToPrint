@@ -1,8 +1,7 @@
-# EasyKeyToPrint
-<p>
-<img style="float: right;" src="https://raw.githubusercontent.com/FedericoGarciaGarcia/EasyKeyToPrint/development/source/images/icon.png">
+<img align="left" width="80" height="80" src="https://raw.githubusercontent.com/FedericoGarciaGarcia/EasyKeyToPrint/development/source/images/icon.png" alt="Resume application project app icon">
 
-Explanation.</p>
+# EasyKeyToPrint
+
 
 ## How to use
 
